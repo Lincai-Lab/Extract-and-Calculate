@@ -1,4 +1,4 @@
-A = csvread('E:\Academic\Microfluidic\DATA\20191104\WT\1\Data.csv');%拷贝文件路径
+A = csvread('filepath.e.g.E:\1\Data.csv');%鎷疯礉鏂囦欢璺緞
 FREQ = A(:,1);
 AMP = A(:,8);
 DEG = A(:,9);
@@ -6,7 +6,7 @@ REAL = AMP.*sind(DEG);
 IMAG = AMP.*cosd(DEG);
 REAL = [FREQ, AMP];
 IMAG = [FREQ, IMAG];
-csvwrite('E:\Academic\Microfluidic\DATA\20191104\WT\1\Real.csv',REAL);%添加导出文件路径
-csvwrite('E:\Academic\Microfluidic\DATA\20191104\WT\1\Imag.csv',IMAG);%添加导出文件路径
+csvwrite('filepath.e.g.E:\1\Real.csv',REAL);%娣诲姞瀵煎嚭鏂囦欢璺緞
+csvwrite('filepath.e.g.E:\1\Imag.csv',IMAG);%娣诲姞瀵煎嚭鏂囦欢璺緞
 
 
